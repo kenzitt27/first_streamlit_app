@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-import snowflake.connector
+#import snowflake.connector
 import urllib.error 
 #import URLError
 
@@ -41,7 +41,7 @@ try:
 #except URLError as e:
    # streamlit.error()
 
-#import snowflake.connector
+import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
